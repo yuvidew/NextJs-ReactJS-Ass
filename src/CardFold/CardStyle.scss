@@ -1,0 +1,256 @@
+.theConst{
+    width: 70%;
+    height: 8rem;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    .theFirstContList{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        h4{
+            font-weight: 400;
+            font-size: 1.5rem;
+            color: #5C6874;
+        }
+    }
+
+}
+.theCardCont{
+    width: 70%;
+    margin: auto;
+    
+    .TheArticleCont{
+        margin-top: 5rem;
+    }
+
+    .theTopBtn{
+        display: flex ;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        padding: .6rem;
+        align-items:center ;
+        width: 125px;
+        height: 34px;
+        border-top-right-radius: .7rem;
+        border-bottom-right-radius: .7rem;
+        background: #FF7724;
+        color: #fff;
+    }
+
+    article{
+        display: flex;
+        height: 20rem;
+        align-items: center;
+        gap: 1rem;
+
+        .first{
+            height: 100%;
+            width: 20%;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            img{
+                width: 17rem;
+            }
+
+            .number{
+                border: 1px solid #E1E4E6;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: 0;
+                left: -5rem;
+                width: 4rem;
+                height: 4rem;
+                border-radius: 5rem;
+                color: #2C384A;
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .second{
+            width: 60%;
+            height: 100%;
+            .textBox1{
+                span{
+                    font-family: 'Inter' ,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-weight: 700;
+                }
+                font-size: 1.6rem;
+                color: #4B5665;
+            }
+            .textBox2{
+                h3{
+                    font-family: 'Inter' ,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-weight: 700;
+                    font-size: 1.6rem;
+                    margin-top: 1rem;
+                    margin-bottom: .7rem;
+                    color: #2C384A;
+                }
+                p{
+                    color: #4B5665;
+                    font-size: 1.6rem;
+                }
+
+                .theListBox{
+                    margin: auto;
+                    width: 90%;
+                    background: #FFF4ED;
+                    padding: 1rem 1.3rem;
+                    border-radius:.7rem ;
+
+                    ul{
+                        list-style: none;
+                    }
+
+                    ul > li{
+                        margin-top: .3rem;
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        span{
+                            padding: .5rem .7rem;
+                            background: #fff;
+                            font-size: 1.7rem;
+                            color: #1B88F4;
+
+                        }
+                        p{
+                            color : #4B5665;
+                        }
+                    }
+                }
+
+                .theSecondList{
+                    h4{
+                        font-size: 1.8rem;
+                        margin-top: .6rem;
+                        font-weight: 500;
+                        color: #2C384A;
+
+                    }
+                    ul{
+                        list-style: none;
+                    }
+                    ul > li{
+                        margin-top: .2rem;
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        span{
+                            margin-top: 1rem;
+                        }
+                        p{
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+
+            .showMoreBTn{
+                margin-top: 1rem;
+                color: #1B88F4;
+                font-size: 1.8rem;
+                font-weight: 300;
+                display: flex;
+                align-items: center;
+                gap: .4rem;
+
+                span{
+                    margin-top: .7rem
+                };
+            }
+        }
+
+        .third{
+            width: 20%;
+            height: 100%;
+            display: flex;
+            align-items: center ;
+            flex-direction: column;
+            justify-content: space-between;
+            
+            .theRating{
+                text-align: center;
+                display: flex;
+                align-items: center ;
+                flex-direction: column;
+                gap: 1rem;
+                height: 11rem;
+                width: 60%;
+                background: #F3F9FF;
+                border-bottom-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+
+                h4{
+                    font-size: 1.4rem;
+                    font-weight:300 ;
+                    color: #074786;
+                }
+
+                h1{
+                    font-size: 3rem;
+                    font-weight:300 ;
+                    color: #074786;
+                }
+            }
+
+            .theViewBtn{
+                width: 100%;
+                height: 4rem;
+                font-size: 1.6rem;
+                color: #fff;
+                border-radius: 1rem;
+                background: #1B88F4;
+            }
+        }
+    }
+
+    .theLastCard{
+        height: 50rem !important;
+    }
+}
+
+@media (max-width : 992px){
+    .theConst{
+        width: 90%;
+
+        .theFirstContList{
+            gap: 1rem;
+            h4{
+                font-size: 1.2rem;
+            }
+        }
+
+    }
+    .theCardCont{
+        width: 90%;
+        article{
+            flex-direction: column !important;
+            height: auto;
+            .first , .second , .third{
+                width: 100%;
+            }
+
+            .first{
+                .number{
+                    left: 0;
+                }
+            }
+
+            .third{
+                gap: 2rem;
+                flex-direction: row-reverse;
+            }
+        }
+    }
+}
